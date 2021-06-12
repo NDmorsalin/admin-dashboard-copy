@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "parsial/mixin";
+@import "parsial/color";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    width: 345px;
+    background: $main-color;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    .sidebar-brand {
+        height: 5rem;
+        padding: 1rem 0 1rem 2rem;
+        color: $white;
+
+        span {
+            display: inline-block;
+            padding-right: 1rem;
+        }
+    }
+
+    .sidebar-menu {
+        li {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+        }
+
+        a {
+            display: block;
+            padding-left: 1rem;
+            font-size: 1.1rem;
+            color: $white;
+            text-transform: capitalize;
+
+            &.active {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                background: $white;
+                color: $main-color;
+                border-radius: 2rem 0 0 2rem;
+            }
+        }
+    }
+}
+
+
+.main-content {
+    margin-left: 345px;
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem ;
+
+        .search-wrapper{
+            height: 3.2rem;
+            border-radius: 3rem;
+            border: 1px solid rgba(0,0,0,.7);
+            display: flex;
+            align-items: center;
+overflow: hidden;
+            input{
+                height: 100%;
+                padding: .5rem;
+                border: none;
+                outline: none;
+            }
+            span{
+                font-size: 1.5rem;
+                padding: 0 1rem;
+            }
+        }
+
+        .user-wrapper{
+            display: flex;
+            align-items: center;
+        }
+
+    }
+}
