@@ -16,10 +16,13 @@
 </head>
 
 <body>
+
+
+    <input type="checkbox" name="nav-toggle" id="nav-toggle">
     <div class="sidebar">
         <div class="sidebar-brand">
             <h2>
-                <span class="lab la-accusoft"></span> Accusoft
+                <span class="lab la-accusoft"></span> <span>Accusoft</span>
             </h2>
         </div>
 
@@ -79,10 +82,11 @@
         <header>
             <div class="header-title">
                 <h1>
-                    <label for="">
+                    <label for="nav-toggle" class="nav-tgl">
                         <span class="las la-bars"></span>
                     </label>
-                    Dashboard
+                    <span>
+                        Dashboard</span>
                 </h1>
             </div>
 
@@ -90,17 +94,17 @@
                 <span class="las la-search"></span>
                 <input type="search" name="" placeholder="search hear" id="">
             </div>
-            
+
             <div class="user-wrapper">
-               <img src="img/user.png" width="40" height="40" alt="user name">
-               <div class="">
-                   <h4>user name</h4>
-                   <small>super admin</small>
-               </div>
+                <img src="img/user.png" width="40" height="40" alt="user name">
+                <div class="">
+                    <h4>user name</h4>
+                    <small>super admin</small>
+                </div>
             </div>
         </header>
         <main>
-            <div class="card">
+            <div class="cards">
 
                 <div class="card-single">
                     <div class="">
@@ -108,7 +112,7 @@
                         <span>customer</span>
                     </div>
                     <div class="">
-                        <span class="las la-users"></span>                       
+                        <span class="las la-users"></span>
                     </div>
                 </div>
 
@@ -118,7 +122,7 @@
                         <span>project</span>
                     </div>
                     <div class="">
-                        <span class="las la-clipboard"></span>                       
+                        <span class="las la-clipboard"></span>
                     </div>
                 </div>
 
@@ -128,7 +132,7 @@
                         <span>order</span>
                     </div>
                     <div class="">
-                        <span class="las la-shopping-bag"></span>                      
+                        <span class="las la-shopping-bag"></span>
                     </div>
                 </div>
 
@@ -138,10 +142,128 @@
                         <span>income</span>
                     </div>
                     <div class="">
-                        <span class="lab la-google-wallet"></span>                       
+                        <span class="lab la-google-wallet"></span>
                     </div>
                 </div>
 
+            </div>
+            <div class="recent-grid">
+                <div class="project">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>recent project</h3>
+                            <button>see all <span class="las la-arrow-right"></span> </button>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width='100%'>
+                                    <thead>
+                                        <tr>
+                                            <th> project title</th>
+                                            <th> department</th>
+                                            <th> status </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>UI/UX Design </td>
+                                            <td> web design</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                review
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>UI/UX Design </td>
+                                            <td> web development</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                review
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>UI/UX Design </td>
+                                            <td> web development</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                review
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="customers">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>recent project</h3>
+                            <button>see all <span class="las la-arrow-right"></span> </button>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="img/user.png" alt="user" width="40" height="40">
+                                    <div class="">
+                                        <h4> jhseon uae</h4>
+                                        <small> CEO Expert</small>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comments"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+                            <div class="customer">
+                                <div class=" info">
+                                    <img src="img/user.png" alt="user" width="40" height="40">
+                                    <div class="">
+                                        <h4> jhseon uae</h4>
+                                        <small> CEO Expert</small>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comments"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="img/user.png" alt="user" width="40" height="40">
+                                    <div class="">
+                                        <h4> jhseon uae</h4>
+                                        <small> CEO Expert</small>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comments"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="img/user.png" alt="user" width="40" height="40">
+                                    <div class="">
+                                        <h4> jhseon uae</h4>
+                                        <small> CEO Expert</small>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comments"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </main>
     </div>
